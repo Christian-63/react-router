@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: #fdf6f0;
+  font-family: sans-serif;
+}
+
+.navbar-greeting h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.navbar-greeting p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  background: #fff;
+  cursor: pointer;
+}
+
+.navbar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+}

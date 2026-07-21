@@ -1,7 +1,15 @@
 import React from "react";
 import "./Sidebar.css";
+import { useNavigate } from "react-router-dom";
 
 function Sidebar() {
+
+    const navigate = useNavigate();
+
+  function handleLogout() {
+  
+    navigate("/Login");
+  }
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
@@ -27,7 +35,7 @@ function Sidebar() {
         <nav className="sidebar-nav">
           <button className="sidebar-link">Settings</button>
           <button className="sidebar-link">Help center</button>
-          <button className="sidebar-link logout">Logout</button>
+          <button className="sidebar-link logout" onClick={handleLogout}>Logout</button>
         </nav>
       </div>
     </aside>
